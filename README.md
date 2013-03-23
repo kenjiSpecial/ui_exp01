@@ -7,3 +7,6 @@
   I developed ui_exp01 using JavaScript and css3, not using jQuery.
   
   CSS3 is generated with compass and scss.
+
+-----
+by [KenjiSpecial](http://kenji-special.com)
