@@ -1,0 +1,157 @@
+/* line 2, ../sass/detail.scss */
+body {
+  background-color: #FFCF00;
+}
+
+/* line 6, ../sass/detail.scss */
+div.content section#details {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 0;
+  margin-bottom: 60px;
+}
+/* line 18, ../sass/detail.scss */
+div.content section#details section.detail {
+  width: 100%;
+  color: #ffffff;
+  height: 0px;
+  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+/* line 28, ../sass/detail.scss */
+div.content section#details section.detail div.detailContent {
+  width: 640px;
+  margin: 0 auto;
+}
+/* line 33, ../sass/detail.scss */
+div.content section#details section.detail div.detailContent div.detail_remove {
+  margin-top: 15px;
+  float: right;
+}
+/* line 36, ../sass/detail.scss */
+div.content section#details section.detail div.detailContent div.detail_remove a {
+  text-decoration: none;
+}
+/* line 39, ../sass/detail.scss */
+div.content section#details section.detail div.detailContent div.detail_remove a i {
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+/* line 51, ../sass/detail.scss */
+div.content section#details section.detail div.detailContent figure {
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+/* line 58, ../sass/detail.scss */
+div.content section#details section.detail div.detailContent h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/* line 63, ../sass/detail.scss */
+div.content section#details section.detail div.detailContent p {
+  font-size: 12px;
+  line-height: 1.4em;
+}
+/* line 69, ../sass/detail.scss */
+div.content section#details section.detail div.detailContent ul li {
+  font-size: 12px;
+}
+/* line 74, ../sass/detail.scss */
+div.content section#details section.detail div.detailContent a {
+  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 89, ../sass/detail.scss */
+div.content section#details section.detail.red div.detailContent p a:hover {
+  color: #e51b00;
+}
+/* line 96, ../sass/detail.scss */
+div.content section#details section.detail.red div.detailContent div.detail_remove a i:hover {
+  color: #e51b00;
+}
+/* line 108, ../sass/detail.scss */
+div.content section#details section.detail.blue div.detailContent p a:hover {
+  color: #1f5de4;
+}
+/* line 114, ../sass/detail.scss */
+div.content section#details section.detail.blue div.detailContent div.detail_remove a i:hover {
+  color: #1f5de4;
+}
+/* line 126, ../sass/detail.scss */
+div.content section#details section.detail.green div.detailContent p a:hover {
+  color: #3ac942;
+}
+/* line 133, ../sass/detail.scss */
+div.content section#details section.detail.green div.detailContent div.detail_remove a i:hover {
+  color: #3ac942;
+}
+/* line 143, ../sass/detail.scss */
+div.content section#details section.detail.yellow div.detailContent h2 {
+  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 148, ../sass/detail.scss */
+div.content section#details section.detail.yellow div.detailContent p {
+  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 151, ../sass/detail.scss */
+div.content section#details section.detail.yellow div.detailContent p a:hover {
+  color: #ffda3d;
+}
+/* line 158, ../sass/detail.scss */
+div.content section#details section.detail.yellow div.detailContent ul li a:hover {
+  color: #ffda3d;
+}
+/* line 166, ../sass/detail.scss */
+div.content section#details section.detail.yellow div.detailContent div.detail_remove a i {
+  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}
+/* line 171, ../sass/detail.scss */
+div.content section#details section.detail.yellow div.detailContent div.detail_remove a i:hover {
+  color: #ffda3d;
+}
+/* line 186, ../sass/detail.scss */
+div.content section.red {
+  background: #C61800;
+}
+/* line 190, ../sass/detail.scss */
+div.content section.blue {
+  background: #1851CE;
+}
+/* line 194, ../sass/detail.scss */
+div.content section.green {
+  background: #31B639;
+}
+/* line 198, ../sass/detail.scss */
+div.content section.yellow {
+  background: #FFCF00;
+}
+
+/* line 205, ../sass/detail.scss */
+section#detail_further div.detailContent p {
+  margin-bottom: 10px;
+}
+/* line 209, ../sass/detail.scss */
+section#detail_further div.detailContent ul {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,13 @@
+This website is developed for the exercise.
+
+-----------------
+
+download:
+    -iconfont
+        Foundation Icon Fonts 2
+        url: http://www.zurb.com/playground/foundation-icons
+
+    - psd template
+        Chrome UI Kit
+        url: http://ui-cloud.com/chrome-ui-kit/
+

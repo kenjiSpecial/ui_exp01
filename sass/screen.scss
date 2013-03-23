@@ -1,0 +1,329 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+$panel_wid: 240px;
+$hover_panel_wid: 280px;
+$hover_left_right_wid: 220px;
+
+
+$panels_wid:$panel_wid * 8;
+//$panel_wid: 12.5%;
+//$panels_wid: 100%;
+
+
+
+div.content{
+  font-family: arial,sans-serif;
+  overflow: hidden;
+
+  width: 100%;
+  heig: 100%;
+
+
+  div#header{
+    z-index: 100;
+    width: 600px;
+    height: 70px;
+    position: fixed;
+
+    //top: 200px;
+
+    img{
+
+      float: left;
+    }
+
+    div#headerSentence{
+
+      margin-left: 12px;
+      margin-top: 18px;
+      float: left;
+    }
+  }
+
+//  -----------------------
+//  open_background
+//  -----------------------
+
+  div#open_background{
+    z-index: 90;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 98%;
+  }
+
+//  -----------------------
+//  panels
+//  -----------------------
+
+  section.panels.tin{
+    div.panel_wrapper{
+      div.tint{
+        opacity: .4;
+      }
+
+
+
+      &.hover_top{
+        div.tint{
+          opacity: 0;
+        }
+
+      }
+    }
+
+  }
+
+
+  section.panels{
+    position: absolute;
+
+    width: $panels_wid;
+    height: 100% ;
+    min-height: 735px;
+
+
+
+    div.panel_bg{
+      position: relative;
+      float: left;
+      width: $panel_wid;
+      height: 100%;
+    }
+
+    div.panel_wrapper.hover_top{
+      z-index: 10;
+    }
+
+    div.panel_wrapper.hover_left{
+      z-index: 0;
+      width: $hover_left_right_wid;
+      @include transition-property(width, margin-left, padding, z-index);
+      @include transition-duration(.4s);
+    }
+
+    div.panel_wrapper.hover_right{
+      z-index: 0;
+      ;
+      @include transition-property(width, margin-left, padding, z-index);
+      @include transition-duration(.4s);
+    }
+
+
+
+    &.tin{
+      div.panel_wrapper{
+        &:hover{
+          width: $hover_panel_wid ;
+          //
+          margin-left: -20px;
+          div.panel{
+            padding: 40px 40px 0;
+          }
+        }
+      }
+    }
+    div.panel_wrapper{
+      z-index: 1;
+      @include transition-property(width, margin-left, padding, z-index);
+      @include transition-duration(.4s);
+
+
+
+
+
+
+
+      a{
+        color: #ffffff;
+        text-decoration: none;
+
+        &:hover {
+          color: #ffffff;
+
+        }
+      }
+
+
+
+
+      div.tint{
+        background: #000;
+        opacity: 0;
+        position: absolute;
+        top: 80px;
+        bottom: 0;
+        width: 100%;
+
+        z-index: 10;
+        @include transition-property(opacity);
+        @include transition-duration(.4s);
+
+      }
+
+      //&:tint_on{
+      //  div.tint{
+      //    opacity: 0.4;
+      //  }
+      //}
+
+
+      width: $panel_wid;
+      height: 100%;
+      position: absolute;
+
+      div.panel{
+        @include transition-property(padding);
+        @include transition-duration(.4s);
+        position: absolute;
+        top: 90px;
+        padding: 40px 20px 0;
+        width: $panel_wid - 40px;
+
+        h1{
+          font-size: 32px;
+          font-weight: bold;
+          text-shadow: 1px -1px 0 rgba(0,0,0,.2);
+        }
+
+        p.title{
+          margin-top: 20px;
+          font-size: 15px;
+          line-height: 1.5em;
+          text-shadow: 1px -1px 0 rgba(0,0,0,.2);
+        }
+
+        div.icon{
+          margin-top: 80px;
+          text-align: center;
+          i{
+            font-size: 140px;
+          }
+        }
+      }
+
+      div.more{
+        @include transition-property(opacity, width);
+        @include transition-duration(.4s);
+
+        width: $panel_wid;
+        position: absolute;
+        height: 20px;
+
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .6);
+        opacity: 0;
+        //padding-left: 20px;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+      }
+
+      &.hover_top{
+        div.more{
+
+          opacity: 1;
+          width: $hover_panel_wid;
+        }
+      }
+
+    }
+
+    &.detail_selected{
+
+
+      div.panel_wrapper{
+        &:hover{
+          width: $panel_wid;
+          margin-left: 0;
+          div.tint{
+            opacity: 0;
+          }
+        }
+
+        div.panel{
+          padding: 0 20px 0;
+        }
+
+        div.tint{
+          opacity: .4;
+
+        }
+
+
+        &.selected{
+          width: $panel_wid;
+          margin-left: -20px;
+          padding: 0 20px 0;
+          z-index: 2;
+
+          &.yellow{
+            div.tint{
+              width: $panel_wid;
+            }
+          }
+
+          div.tint{
+            opacity: 0;
+          }
+
+        }
+      }
+
+    }
+
+    div.red{
+      background: #C61800;
+      i{
+        color: #e51b00;
+        text-shadow: -1px 1px 0 rgba(0, 0, 0, .1);
+      }
+    }
+
+    div.blue{
+      background: #1851CE;
+      i{
+        color: #1f5de4;
+        text-shadow: -1px 1px 0 rgba(0, 0, 0, .1);
+      }
+    }
+
+    div.green{
+      background: #31B639;
+      i{
+        color: #3ac942;
+        text-shadow: -1px 1px 0 rgba(0, 0, 0, .1);
+      }
+    }
+
+    div.yellow{
+      background: #FFCF00;
+      i{
+        color: #ffda3d;
+        text-shadow: -1px 1px 0 rgba(0, 0, 0, .2);
+      }
+    }
+
+  }
+
+}
+
+
+
+div.clear{
+  clear: both;
+  height: 0;
+}
+
+

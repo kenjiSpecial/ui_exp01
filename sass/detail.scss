@@ -1,0 +1,213 @@
+@import "compass/css3";
+body{
+  background-color: #FFCF00;
+}
+div.content {
+  section#details {
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    height: 0;
+    margin-bottom: 60px;
+
+
+
+    section.detail {
+      width: 100%;
+      //padding-bottom: 60px;
+      color: #ffffff;
+      height: 0px;
+      text-shadow: 1px -1px 0 rgba(0, 0, 0, .4);
+
+
+      overflow: hidden;
+
+      div.detailContent {
+
+        width: 640px;
+        margin: 0 auto;
+
+        div.detail_remove {
+          margin-top: 15px;
+          float: right;
+          a {
+            text-decoration: none;
+
+            i {
+              color: rgba(255, 255, 255, 0.4);
+              text-shadow: 1px -1px 0 rgba(0, 0, 0, .2);
+              text-decoration: none;
+              @include transition-property(color);
+              @include transition-duration(.4s);
+            }
+
+
+          }
+        }
+
+        figure {
+          padding-top: 10px;
+          margin-bottom: 15px;
+
+
+        }
+
+        h2 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 1.4em;
+        }
+
+        ul{
+          li{
+            font-size: 12px;
+          }
+        }
+
+        a{
+          text-decoration: none;
+          color: #fff;
+          text-decoration: underline;
+          @include transition-property(color);
+          @include transition-duration(.2s);
+
+
+
+        }
+      }
+
+      &.red{
+        div.detailContent{
+          p{
+            a:hover{
+              color: #e51b00;
+            }
+          }
+
+          div.detail_remove{
+            a{
+              i:hover{
+                color: #e51b00;
+              }
+            }
+          }
+        }
+      }
+
+      &.blue{
+        div.detailContent{
+
+          p{
+            a:hover{
+              color: #1f5de4;
+            }
+          }
+          div.detail_remove{
+            a{
+              i:hover{
+                color: #1f5de4;
+              }
+            }
+
+          }
+        }
+      }
+
+      &.green{
+        div.detailContent{
+          p{
+            a:hover{
+              color: #3ac942;
+            }
+          }
+
+          div.detail_remove{
+            a{
+              i:hover{
+                color: #3ac942;
+              }
+            }
+          }
+        }
+      }
+
+      &.yellow{
+        div.detailContent{
+          h2{
+            text-shadow: 1px -1px 0 rgba(0, 0, 0, .1);
+
+          }
+
+          p{
+
+            text-shadow: 1px -1px 0 rgba(0, 0, 0, .1);
+            a:hover{
+              color: #ffda3d;
+            }
+          }
+
+          ul{
+            li{
+              a:hover{
+                color: #ffda3d;
+              }
+            }
+          }
+
+          div.detail_remove{
+            a{
+              i{
+
+                text-shadow: 1px -1px 0 rgba(0, 0, 0, .1);
+                color: rgba(255, 255, 255, .6);
+
+                &:hover{
+                  color: #ffda3d;
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+
+    }
+  }
+
+  // setting background
+  section.red {
+    background: #C61800;
+  }
+
+  section.blue {
+    background: #1851CE;
+  }
+
+  section.green {
+    background: #31B639;
+  }
+
+  section.yellow {
+    background: #FFCF00;
+  }
+}
+
+section#detail_further{
+  div.detailContent{
+    p{
+      margin-bottom: 10px;
+    }
+
+    ul{
+      margin-bottom: 10px;
+    }
+  }
+}

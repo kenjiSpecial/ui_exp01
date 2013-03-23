@@ -1,0 +1,343 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 20, ../sass/screen.scss */
+div.content {
+  font-family: arial,sans-serif;
+  overflow: hidden;
+  width: 100%;
+  min-width: 640px;
+  heig: 100%;
+}
+/* line 29, ../sass/screen.scss */
+div.content div#header {
+  z-index: 100;
+  width: 600px;
+  height: 70px;
+  position: fixed;
+}
+/* line 37, ../sass/screen.scss */
+div.content div#header img {
+  float: left;
+}
+/* line 42, ../sass/screen.scss */
+div.content div#header div#headerSentence {
+  margin-left: 12px;
+  margin-top: 18px;
+  float: left;
+}
+/* line 54, ../sass/screen.scss */
+div.content div#open_background {
+  z-index: 90;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+}
+/* line 71, ../sass/screen.scss */
+div.content section.panels.tin div.panel_wrapper div.tint {
+  opacity: .4;
+}
+/* line 78, ../sass/screen.scss */
+div.content section.panels.tin div.panel_wrapper.hover_top div.tint {
+  opacity: 0;
+}
+/* line 88, ../sass/screen.scss */
+div.content section.panels {
+  position: absolute;
+  width: 1920px;
+  height: 100%;
+  min-height: 735px;
+}
+/* line 97, ../sass/screen.scss */
+div.content section.panels div.panel_bg {
+  position: relative;
+  float: left;
+  width: 240px;
+  height: 100%;
+}
+/* line 104, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper.hover_top {
+  z-index: 10;
+}
+/* line 108, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper.hover_left {
+  z-index: 0;
+  width: 220px;
+  -webkit-transition-property: width, margin-left, padding, z-index;
+  -moz-transition-property: width, margin-left, padding, z-index;
+  -o-transition-property: width, margin-left, padding, z-index;
+  transition-property: width, margin-left, padding, z-index;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+/* line 115, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper.hover_right {
+  z-index: 0;
+  -webkit-transition-property: width, margin-left, padding, z-index;
+  -moz-transition-property: width, margin-left, padding, z-index;
+  -o-transition-property: width, margin-left, padding, z-index;
+  transition-property: width, margin-left, padding, z-index;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+/* line 126, ../sass/screen.scss */
+div.content section.panels.tin div.panel_wrapper:hover {
+  width: 280px;
+  margin-left: -20px;
+}
+/* line 130, ../sass/screen.scss */
+div.content section.panels.tin div.panel_wrapper:hover div.panel {
+  padding: 40px 40px 0;
+}
+/* line 136, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper {
+  z-index: 1;
+  -webkit-transition-property: width, margin-left, padding, z-index;
+  -moz-transition-property: width, margin-left, padding, z-index;
+  -o-transition-property: width, margin-left, padding, z-index;
+  transition-property: width, margin-left, padding, z-index;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  width: 240px;
+  height: 100%;
+  position: absolute;
+}
+/* line 147, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 151, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper a:hover {
+  color: #ffffff;
+}
+/* line 160, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper div.tint {
+  background: #000;
+  opacity: 0;
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+/* line 185, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper div.panel {
+  -webkit-transition-property: padding;
+  -moz-transition-property: padding;
+  -o-transition-property: padding;
+  transition-property: padding;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  position: absolute;
+  top: 90px;
+  padding: 40px 20px 0;
+  width: 200px;
+}
+/* line 193, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper div.panel h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 199, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper div.panel p.title {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.5em;
+  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 206, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper div.panel div.icon {
+  margin-top: 80px;
+  text-align: center;
+}
+/* line 209, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper div.panel div.icon i {
+  font-size: 140px;
+}
+/* line 215, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper div.more {
+  -webkit-transition-property: opacity, width;
+  -moz-transition-property: opacity, width;
+  -o-transition-property: opacity, width;
+  transition-property: opacity, width;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  width: 240px;
+  position: absolute;
+  height: 20px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+/* line 235, ../sass/screen.scss */
+div.content section.panels div.panel_wrapper.hover_top div.more {
+  opacity: 1;
+  width: 280px;
+}
+/* line 248, ../sass/screen.scss */
+div.content section.panels.detail_selected div.panel_wrapper:hover {
+  width: 240px;
+  margin-left: 0;
+}
+/* line 251, ../sass/screen.scss */
+div.content section.panels.detail_selected div.panel_wrapper:hover div.tint {
+  opacity: 0;
+}
+/* line 256, ../sass/screen.scss */
+div.content section.panels.detail_selected div.panel_wrapper div.panel {
+  padding: 0 20px 0;
+}
+/* line 260, ../sass/screen.scss */
+div.content section.panels.detail_selected div.panel_wrapper div.tint {
+  opacity: .4;
+}
+/* line 266, ../sass/screen.scss */
+div.content section.panels.detail_selected div.panel_wrapper.selected {
+  width: 240px;
+  margin-left: -20px;
+  padding: 0 20px 0;
+  z-index: 2;
+}
+/* line 273, ../sass/screen.scss */
+div.content section.panels.detail_selected div.panel_wrapper.selected.yellow div.tint {
+  width: 240px;
+}
+/* line 278, ../sass/screen.scss */
+div.content section.panels.detail_selected div.panel_wrapper.selected div.tint {
+  opacity: 0;
+}
+/* line 287, ../sass/screen.scss */
+div.content section.panels div.red {
+  background: #C61800;
+}
+/* line 289, ../sass/screen.scss */
+div.content section.panels div.red i {
+  color: #e51b00;
+  text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 295, ../sass/screen.scss */
+div.content section.panels div.blue {
+  background: #1851CE;
+}
+/* line 297, ../sass/screen.scss */
+div.content section.panels div.blue i {
+  color: #1f5de4;
+  text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 303, ../sass/screen.scss */
+div.content section.panels div.green {
+  background: #31B639;
+}
+/* line 305, ../sass/screen.scss */
+div.content section.panels div.green i {
+  color: #3ac942;
+  text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 311, ../sass/screen.scss */
+div.content section.panels div.yellow {
+  background: #FFCF00;
+}
+/* line 313, ../sass/screen.scss */
+div.content section.panels div.yellow i {
+  color: #ffda3d;
+  text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 325, ../sass/screen.scss */
+div.clear {
+  clear: both;
+  height: 0;
+}
