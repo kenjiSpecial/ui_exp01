@@ -9,4 +9,4 @@
   CSS3 is generated with compass and scss.
 
 -----
-by [KenjiSpecial](http://kenji-special.com)
+Designed and Developed by [KenjiSpecial](http://kenji-special.com)
