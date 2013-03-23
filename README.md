@@ -8,7 +8,7 @@
   
   CSS3 is generated with compass and scss.
   
-  There are no relation between me and google.
+  There is no relation between me and google.
 
 -----
 Designed and Developed by [KenjiSpecial](http://kenji-special.com)
